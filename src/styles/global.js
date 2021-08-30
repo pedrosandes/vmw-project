@@ -3,15 +3,26 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.ttf");
-  font-weight: 700;
+  font-family: "Valorant";
+  src: url("/fonts/Valorant.ttf");
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.ttf");
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-regular.ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -36,7 +47,8 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Open Sans";
+  font-weight: 500;
 }
 
 h1, h2, p { 
