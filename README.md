@@ -1,22 +1,8 @@
-This is a template for [Create React App](https://github.com/facebook/create-react-app) with some useful dependencies configured.
-You can read more about custom-templates on the [oficial documentation](https://create-react-app.dev/docs/custom-templates/)
+# Documentação do VMW
 
-> [IMPORTANT] - development dependencies (devDependencies) are not yet supported by create-react-app templates. So if you want to have ESLint and Prettier configured in your project, please follow the steps bellow:
+# Stack do projeto
 
-```shell
-# install devDependencies manually
-yarn add prettier eslint babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-import-helpers eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks -D
-```
-
-## how to use this template?
-
-Open your terminal and run:
-```shell
-npx create-react-app YOUR_PROJECT_NAME --template estartando-devs-react
-```
-
-This will create a project with the following libs:
-
-* [axios](https://github.com/axios/axios)
-* [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
-
+<img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
