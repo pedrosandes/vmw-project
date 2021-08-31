@@ -1,6 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+:root {
+  font-size: 62.5%;
+}
 
 @font-face {
   font-family: "Valorant";
@@ -47,18 +51,43 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans";
-  font-weight: 500;
+  font-family: ${({ theme }) => theme.fonts[1]};
 }
 
-h1, h2, p { 
-    margin: 0;
-    line-height: 1;
-  }
+h1 {
+  color: ${({ theme }) => theme.colors.blackSecundary};
+  font-size: ${({ theme }) => theme.fontSize.fs64};
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-size: ${({ theme }) => theme.fontSize.fs36};
+  line-height: 5.4rem;
+}
+
+p {
+  font-size: ${({ theme }) => theme.fontSize.fs18};
+  color: ${({ theme }) => theme.colors.blackSecundary};
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 #root, html, body {
-    min-height: 100%;
+    font-size: 1.6rem;
+    min-height: 100vh;
     width: 100%;
+    background-color: ${({ theme }) => theme.background};
   }
 
 `;
