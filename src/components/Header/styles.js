@@ -4,6 +4,9 @@ export const ContainerWrapper = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.redSecundary};
   height: 7rem;
+  position: sticky;
+  top: 0;
+  left: 0;
 `;
 
 export const ContainerContent = styled.div`
@@ -35,6 +38,12 @@ export const ContainerLeft = styled.div`
 
 export const List = styled.ul`
   display: flex;
+
+  .selected {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -47,7 +56,11 @@ export const ListItem = styled.li`
   }
 
   a:hover {
-    color: ${({ theme }) => theme.colors.blackSecundary};
+    color: ${({ theme }) => theme.colors.white};
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 
   @media (max-width: 897px) {
@@ -95,7 +108,7 @@ export const MenuIcon = styled.img`
 export const ContainerNav = styled.nav`
   width: 100vw;
   height: ${({ open }) => (open ? "calc(100vh - 7rem)" : "0px")};
-  position: absolute;
+  position: fixed;
   top: 7rem;
   left: 0;
   transition: height 0.4s;
@@ -118,6 +131,12 @@ export const ListItemMobile = styled.li`
     padding: 10px;
     font-weight: 500;
     transition: color 0.4s;
+  }
+
+  .selected {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 
   a:hover {
