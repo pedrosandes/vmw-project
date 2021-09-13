@@ -4,6 +4,9 @@ export const ContainerWrapper = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.redSecundary};
   height: 7rem;
+  position: sticky;
+  top: 0;
+  left: 0;
 `;
 
 export const ContainerContent = styled.div`
@@ -105,7 +108,7 @@ export const MenuIcon = styled.img`
 export const ContainerNav = styled.nav`
   width: 100vw;
   height: ${({ open }) => (open ? "calc(100vh - 7rem)" : "0px")};
-  position: absolute;
+  position: fixed;
   top: 7rem;
   left: 0;
   transition: height 0.4s;
