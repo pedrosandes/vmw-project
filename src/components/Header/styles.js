@@ -35,6 +35,12 @@ export const ContainerLeft = styled.div`
 
 export const List = styled.ul`
   display: flex;
+
+  .selected {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -47,7 +53,11 @@ export const ListItem = styled.li`
   }
 
   a:hover {
-    color: ${({ theme }) => theme.colors.blackSecundary};
+    color: ${({ theme }) => theme.colors.white};
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 
   @media (max-width: 897px) {
@@ -118,6 +128,12 @@ export const ListItemMobile = styled.li`
     padding: 10px;
     font-weight: 500;
     transition: color 0.4s;
+  }
+
+  .selected {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
   }
 
   a:hover {
