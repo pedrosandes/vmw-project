@@ -6,7 +6,7 @@ import MenuCloseIcon from "../../assets/img/svg/menu-close-icon.svg";
 import { Nav } from "./nav";
 import Routes from "./LinkRoutes";
 import { InputSearch } from "./inputSearch";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +29,9 @@ const Header = () => {
     <>
       <S.ContainerWrapper open={isOpen}>
         <S.ContainerContent>
-          <Link to="/">
+          <NavLink to="/">
             <S.Logo src={Logo} alt="Logo do Valorant Media Wiki" />
-          </Link>
+          </NavLink>
           <S.MenuIcon
             onClick={ToggleMenu}
             src={isOpen ? MenuCloseIcon : MenuOpenIcon}
@@ -48,9 +48,14 @@ const Header = () => {
         <S.ListMobile open={isOpen}>
           {Routes.map(({ id, name, path }) => (
             <S.ListItemMobile key={id}>
-              <Link to={path} onClick={CloseLinkOnClick}>
+              <NavLink
+                exact
+                to={path}
+                activeClassName="selected"
+                onClick={CloseLinkOnClick}
+              >
                 {name}
-              </Link>
+              </NavLink>
             </S.ListItemMobile>
           ))}
         </S.ListMobile>
