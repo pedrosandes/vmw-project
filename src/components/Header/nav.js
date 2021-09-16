@@ -1,5 +1,7 @@
 import * as S from "./styles";
 import { NavLink } from "react-router-dom";
+
+/* Arquivo de rotas*/
 import Routes from "./LinkRoutes";
 
 const Nav = () => {
@@ -16,4 +18,4 @@ const Nav = () => {
   );
 };
 
-export { Nav };
+export default Nav;
