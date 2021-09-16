@@ -10,4 +10,4 @@ const InputSearch = () => {
   );
 };
 
-export { InputSearch };
+export default InputSearch;

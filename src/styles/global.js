@@ -83,6 +83,10 @@ img {
   height: auto;
 }
 
+button {
+  border: none;
+}
+
 #root, html, body {
     font-size: 1.6rem;
     min-height: 100vh;

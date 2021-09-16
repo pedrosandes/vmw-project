@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Home, Agentes, Mapas, Ranques, Modos } from "./pages";
+import { Home, Agentes, Mapas, Ranques, Modos, Sobre } from "./pages";
 import { Header } from "./components";
 
 export default function Routes() {
@@ -9,7 +9,7 @@ export default function Routes() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/sobre" component={Home} />
+        <Route path="/sobre" component={Sobre} />
         <Route path="/agentes/" component={Agentes} />
         <Route path="/agentes/:id" component={Agentes} />
         <Route path="/modosdejogo" component={Modos} />
