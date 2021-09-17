@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import IconSearch from "../../assets/img/svg/search-icon.svg";
+import IconSearch from "../../assets/svg/search-icon.svg";
 
 const InputSearch = () => {
   return (
