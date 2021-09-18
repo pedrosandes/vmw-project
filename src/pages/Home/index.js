@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const Home = () =>{
-    return (
-        <div>
-            home works
-        </div>
-    )
-}
+/* Components  */
+import { BigCard } from "../../components";
+import { Agents } from "../../components";
 
-export default Home
+const Home = () => {
+  return (
+    <>
+      <BigCard />
+      <Agents />
+    </>
+  );
+};
+
+export default Home;
