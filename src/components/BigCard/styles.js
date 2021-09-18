@@ -49,9 +49,8 @@ export const Title = styled.h1`
     text-align: center;
   }
 
-  @media (max-width: 516px) {
-    font-size: ${({ theme }) => theme.fontSize.fs34};
-    line-height: 40px;
+  @media (max-width: 330px) {
+    font-size: ${({ theme }) => theme.fontSize.fs36};
   }
 `;
 export const Text = styled.p`
@@ -66,6 +65,10 @@ export const Text = styled.p`
 
   @media (max-width: 985px) {
     text-align: center;
+  }
+
+  @media (max-width: 330px) {
+    font-size: ${({ theme }) => theme.fontSize.fs12};
   }
 `;
 
@@ -90,6 +93,11 @@ export const Button = styled.button`
 
   @media (max-width: 1300px) {
     max-width: 300px;
+  }
+
+  @media (max-width: 330px) {
+    max-width: inherit;
+    width: 80%;
   }
 `;
 
