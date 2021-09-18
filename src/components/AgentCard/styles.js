@@ -9,8 +9,20 @@ export const CardContainer = styled.section`
   background-color: ${({ theme }) => theme.colors.redSecundary};
   border-radius: 2rem;
   padding: 20px 0 60px 0;
-  filter: drop-shadow(4px 4px 30px #fc9ba4);
+  /* filter: drop-shadow(4px 4px 30px #fc9ba4); */
   cursor: pointer;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 50px;
+    bottom: 64px;
+    content: "";
+    width: 150px;
+    height: 9px;
+    background-color: rgba(44, 43, 43, 0.5);
+    filter: blur(9px);
+  }
 `;
 
 export const CardName = styled.span`
