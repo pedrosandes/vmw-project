@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 import Routes from "./LinkRoutes";
 
 /* Assets  */
-import Logo from "../../assets/img/svg/logo.svg";
-import MenuOpenIcon from "../../assets/img/svg/menu-open-icon.svg";
-import MenuCloseIcon from "../../assets/img/svg/menu-close-icon.svg";
+import Logo from "../../assets/svg/logo.svg";
+import MenuOpenIcon from "../../assets/svg/menu-open-icon.svg";
+import MenuCloseIcon from "../../assets/svg/menu-close-icon.svg";
 
 /* Components  */
 import Nav from "./nav";

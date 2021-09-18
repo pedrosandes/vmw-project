@@ -112,6 +112,7 @@ export const ContainerNav = styled.nav`
   top: 7rem;
   left: 0;
   transition: height 0.4s;
+  z-index: 2;
 `;
 
 export const ListMobile = styled.ul`
