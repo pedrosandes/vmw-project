@@ -5,7 +5,6 @@ const Button = ({ color, children, to = "/" }) => {
   const history = useHistory();
 
   function handleButtonRoute() {
-    console.log("Cliquei");
     history.push(to);
   }
   return (
