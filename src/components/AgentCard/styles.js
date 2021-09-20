@@ -18,7 +18,7 @@ export const CardContainer = styled.section`
     transform: translateX(-50%);
     bottom: 64px;
     content: "";
-    width: 150px;
+    width: 70%;
     height: 9px;
     background-color: rgba(44, 43, 43, 0.5);
     filter: blur(9px);
