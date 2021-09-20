@@ -14,7 +14,8 @@ export const CardContainer = styled.section`
 
   &::after {
     position: absolute;
-    left: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 64px;
     content: "";
     width: 150px;
