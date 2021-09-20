@@ -7,4 +7,5 @@ export const TitleStyled = styled.h2`
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 500;
+  line-height: 32px;
 `;

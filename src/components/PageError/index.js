@@ -3,7 +3,11 @@ import { useHistory } from "react-router";
 /* Assets */
 import ErrorImage from "../../assets/img/error-image.png";
 
-const PageError = ({ errorTitle, errorText }) => {
+const title = "Página em desenvolvimento";
+const text =
+  "Oops! Parece que a Killjoy ainda não terminou de desenvolver essa página.";
+
+const PageError = ({ errorTitle = title, errorText = text }) => {
   const { push } = useHistory();
   function pushFromAbout() {
     push("/");
