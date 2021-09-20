@@ -36,4 +36,6 @@ export const CardImage = styled.div`
   max-height: 279px;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  pointer-events: none;
+`;
