@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
   position: relative;
-  min-width: 250px;
+  min-width: 300px;
   min-height: 50px;
   font-weight: 700;
 
   background-color: transparent;
   color: ${({ fontColor }) => fontColor};
-  border-radius: 5px;
   text-transform: uppercase;
 
   cursor: pointer;
@@ -24,6 +23,7 @@ export const ButtonStyled = styled.button`
     left: 0;
     bottom: 0;
     transition: transform 0.3s ease;
+    border-radius: 5px;
   }
 
   &:hover::after {
@@ -31,5 +31,9 @@ export const ButtonStyled = styled.button`
   }
   &:hover::before {
     transform: translate(5px, 5px);
+  }
+
+  @media (max-width: 480px) {
+    min-width: 240px;
   }
 `;
