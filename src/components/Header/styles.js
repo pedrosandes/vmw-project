@@ -8,7 +8,7 @@ export const ContainerWrapper = styled.header`
   top: 0;
   left: 0;
   z-index: 1;
-  box-shadow: -1px 4px 25px -6px rgba(0, 0, 0, 0.82);
+  box-shadow: -1px 4px 25px -6px rgba(0, 0, 0, 0.3);
 `;
 
 export const ContainerContent = styled.div`
