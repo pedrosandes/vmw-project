@@ -11,7 +11,6 @@ export const ContainerAgents = styled.div`
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: center;
 `;
 

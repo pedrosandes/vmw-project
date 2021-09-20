@@ -41,6 +41,7 @@ const Agents = () => {
           itemsToScroll={1}
           itemsToShow={4}
           renderArrow={ArrowButton}
+          itemPadding={[10]}
         >
           {agents.map(({ name, image, id }) => (
             <AgentCard key={id} name={name} image={image} />
