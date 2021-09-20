@@ -42,8 +42,8 @@ const Agents = () => {
           itemsToShow={4}
           renderArrow={ArrowButton}
         >
-          {agents.map(({ name, image }) => (
-            <AgentCard name={name} image={image} />
+          {agents.map(({ name, image, id }) => (
+            <AgentCard key={id} name={name} image={image} />
           ))}
         </Carousel>
       </S.ContainerAgents>
