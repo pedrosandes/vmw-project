@@ -9,7 +9,6 @@ export const CardContainer = styled.section`
   background-color: ${({ theme }) => theme.colors.redSecundary};
   border-radius: 2rem;
   padding: 20px 0 60px 0;
-  /* filter: drop-shadow(4px 4px 30px #fc9ba4); */
   cursor: pointer;
   position: relative;
 
@@ -30,10 +29,16 @@ export const CardName = styled.span`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
   font-size: ${({ theme }) => theme.fontSize.fs20};
+
+  @media (max-width: 480px) {
+    font-size: ${({ theme }) => theme.fontSize.fs12};
+  }
 `;
 
 export const CardImage = styled.div`
   max-height: 279px;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  pointer-events: none;
+`;

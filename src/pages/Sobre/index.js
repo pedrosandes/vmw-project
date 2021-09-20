@@ -1,7 +1,10 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Sobre = () => {
-  return <div>SOBRE SOBRE SOBRE SBORE</div>;
+  return <PageError />;
 };
 
 export default Sobre;

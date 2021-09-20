@@ -1,7 +1,10 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Agentes = () => {
-  return <div>AGENTES AGENTES AGENTES AGENTES</div>;
+  return <PageError />;
 };
 
 export default Agentes;

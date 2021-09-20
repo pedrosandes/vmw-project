@@ -1,7 +1,10 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Ranques = () => {
-  return <div>RANQUES RANQUES RANQUES RANQUES</div>;
+  return <PageError />;
 };
 
 export default Ranques;

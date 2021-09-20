@@ -1,7 +1,10 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Mapas = () => {
-  return <div>MAPAS MAPAS MAPAS MAPAS</div>;
+  return <PageError />;
 };
 
 export default Mapas;

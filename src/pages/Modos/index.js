@@ -1,7 +1,10 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Modos = () => {
-  return <div>MODOS MODOS MODOS MODOS</div>;
+  return <PageError />;
 };
 
 export default Modos;
