@@ -1,7 +1,15 @@
 import React from "react";
 
+/* Components  */
+import { PageError } from "../../components";
+
 const Mapas = () => {
-  return <div>MAPAS MAPAS MAPAS MAPAS</div>;
+  return (
+    <PageError
+      errorTitle="Página em desenvolvimento"
+      errorText="Ah não! Parece que a Killjoy ainda não terminou de desenvolver essa página."
+    />
+  );
 };
 
 export default Mapas;
