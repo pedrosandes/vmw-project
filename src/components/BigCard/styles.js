@@ -49,8 +49,10 @@ export const Title = styled.h1`
     text-align: center;
   }
 
-  @media (max-width: 330px) {
-    font-size: ${({ theme }) => theme.fontSize.fs36};
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    font-size: ${({ theme }) => theme.fontSize.fs24};
+    line-height: 24px;
   }
 `;
 export const Text = styled.p`
