@@ -6,6 +6,15 @@ export const getAllAgents = async () => {
     const response = await axios.get(`${URL_BASE}/agents/`);
     return response;
   } catch (error) {
-    console.log(`Error ao fazer a requisição de todos os agentes ${error}`);
+    console.log(`Error ao fazer a requisição de todos os agentes: ${error}`);
+  }
+};
+
+export const getGameModes = async () => {
+  try {
+    const response = await axios.get(`${URL_BASE}/gamemodes/`);
+    return response;
+  } catch (error) {
+    console.log(`Error ao fazer a requisição dos modos de jogo: ${error}`);
   }
 };
