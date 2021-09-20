@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   display: flex;
   border: 2px solid #fa4454;
   border-radius: 20px;
-  padding: 0 100px;
+  padding: 10px 100px;
 
   @media (max-width: 985px) {
     flex-direction: column-reverse;

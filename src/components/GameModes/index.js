@@ -21,7 +21,6 @@ const GameModes = () => {
       setGameModes(data);
     })();
   }, []);
-  console.log(gameModes);
 
   return (
     <S.Container backgroundImage={TextBackground}>
