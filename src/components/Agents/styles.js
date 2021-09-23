@@ -12,6 +12,12 @@ export const ContainerAgents = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 385px;
+
+  @media screen and (max-width: 481px) {
+    height: inherit;
+    max-height: 365px;
+  }
 `;
 
 export const WrapperButton = styled.div`
