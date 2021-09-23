@@ -4,13 +4,18 @@ export const CardContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 250px;
-  max-height: 400px;
+  width: 250px;
+  height: 365px;
   background-color: ${({ theme }) => theme.colors.redSecundary};
   border-radius: 2rem;
   padding: 20px 0 60px 0;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 481px) {
+    height: inherit;
+    max-height: 365px;
+  }
 
   &::after {
     position: absolute;
