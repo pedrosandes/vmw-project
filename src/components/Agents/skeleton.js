@@ -11,19 +11,35 @@ const AgentsSkeleton = () => {
       <SectionTitle color="#333">Agentes</SectionTitle>
       <S.ContainerAgents>
         <S.WrapperArrowButton>
-          <S.ArrowButton />
+          <S.ArrowButton>
+            <S.ShimmerWrapper>
+              <S.Shimmer />
+            </S.ShimmerWrapper>
+          </S.ArrowButton>
         </S.WrapperArrowButton>
         <S.ContainerCarousel>
           {cardsArr.map((_) => (
-            <S.AgentCard />
+            <S.AgentCard>
+              <S.ShimmerWrapper>
+                <S.Shimmer />
+              </S.ShimmerWrapper>
+            </S.AgentCard>
           ))}
         </S.ContainerCarousel>
         <S.WrapperArrowButton>
-          <S.ArrowButton />
+          <S.ArrowButton>
+            <S.ShimmerWrapper>
+              <S.Shimmer />
+            </S.ShimmerWrapper>
+          </S.ArrowButton>
         </S.WrapperArrowButton>
       </S.ContainerAgents>
       <S.WrapperButton>
-        <S.Button />
+        <S.Button>
+          <S.ShimmerWrapper>
+            <S.Shimmer />
+          </S.ShimmerWrapper>
+        </S.Button>
       </S.WrapperButton>
     </S.Container>
   );

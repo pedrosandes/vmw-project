@@ -56,27 +56,30 @@ export const Button = styled.div`
   width: 300px;
   min-height: 50px;
   border-radius: 5px;
-  background: #a9a9a9;
+  background: rgba(250, 68, 84, 0.5);
 `;
 
 export const AgentCard = styled.div`
   width: 250px;
   height: 365px;
-  background: #a9a9a9;
+  background: rgba(250, 68, 84, 0.5);
   border-radius: 20px;
-  position: relative;
   overflow: hidden;
+`;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    animation: ${loading} 2.5s infinite;
-  }
+export const ShimmerWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: skewX(-20deg);
+`;
+
+export const Shimmer = styled.div`
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: ${loading} 1s infinite;
 `;
 
 export const WrapperArrowButton = styled.div`
@@ -88,6 +91,6 @@ export const ArrowButton = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #a9a9a9;
+  background: rgba(250, 68, 84, 0.5);
   margin: 10px;
 `;
