@@ -10,15 +10,18 @@ import AgentCard from "../AgentCard";
 import SectionTitle from "../SectionTitle";
 import Button from "../Button";
 import ArrowButton from "../ArrowButton";
+import AgentsSkeleton from "./skeleton";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
       const agentsResponse = await getAllAgents();
       const { data } = agentsResponse;
       setAgents(data);
+      setLoading(true);
     })();
   }, []);
 
@@ -32,26 +35,31 @@ const Agents = () => {
   ];
 
   return (
-    <S.Container>
-      <SectionTitle color="#333">Agentes</SectionTitle>
-      <S.ContainerAgents>
-        <Carousel
-          breakPoints={breakPoint}
-          pagination={false}
-          itemsToScroll={1}
-          itemsToShow={4}
-          renderArrow={ArrowButton}
-          itemPadding={[10]}
-        >
-          {agents.map(({ name, image, id }) => (
-            <AgentCard key={id} name={name} image={image} />
-          ))}
-        </Carousel>
-      </S.ContainerAgents>
-      <S.WrapperButton>
-        <Button to="/agentes">Ver todos os agentes</Button>
-      </S.WrapperButton>
-    </S.Container>
+    <>
+      {loading && (
+        <S.Container>
+          <SectionTitle color="#333">Agentes</SectionTitle>
+          <S.ContainerAgents>
+            <Carousel
+              breakPoints={breakPoint}
+              pagination={false}
+              itemsToScroll={1}
+              itemsToShow={4}
+              renderArrow={ArrowButton}
+              itemPadding={[10]}
+            >
+              {agents.map(({ name, image, id }) => (
+                <AgentCard key={id} name={name} image={image} />
+              ))}
+            </Carousel>
+          </S.ContainerAgents>
+          <S.WrapperButton>
+            <Button to="/agentes">Ver todos os agentes</Button>
+          </S.WrapperButton>
+        </S.Container>
+      )}
+      {!loading && <AgentsSkeleton />}
+    </>
   );
 };
 
