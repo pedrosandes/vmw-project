@@ -21,7 +21,9 @@ const Agents = () => {
       const agentsResponse = await getAllAgents();
       const { data } = agentsResponse;
       setAgents(data);
-      setLoading(true);
+      setTimeout(() => {
+        setLoading(true);
+      }, 1000);
     })();
   }, []);
 
