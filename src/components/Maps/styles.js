@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const MapsContainer = styled.section`
@@ -42,7 +42,7 @@ export const MapImage = styled.img`
   object-fit: cover;
   transform: scale(1);
   transition: transform 0.1s;
-  background: ${({ theme }) => theme.colors.blackPrimary};
+  background: rgba(250, 68, 84, 0.5);
 
   &:hover {
     transform: scale(1.1);
@@ -61,5 +61,46 @@ export const MapName = styled.h1`
 export const MapLink = styled(Link)``;
 
 export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   text-align: center;
+`;
+
+/* Skeleton */
+
+const loading = keyframes`
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+`;
+export const MapsItemSkeleton = styled(MapsItem)`
+  background: rgba(250, 68, 84, 0.5);
+`;
+
+export const Button = styled.div`
+  width: 300px;
+  min-height: 50px;
+  border-radius: 5px;
+  background: rgba(250, 68, 84, 0.5);
+`;
+
+export const ShimmerWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: skewX(-20deg);
+`;
+
+export const Shimmer = styled.div`
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: ${loading} 1s infinite;
 `;

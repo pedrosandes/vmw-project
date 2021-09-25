@@ -20,6 +20,8 @@ export const ContainerAgents = styled.div`
 `;
 
 export const WrapperButton = styled.div`
+  display: flex;
+  justify-content: center;
   text-align: center;
 `;
 
