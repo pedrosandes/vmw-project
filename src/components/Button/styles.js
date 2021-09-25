@@ -12,6 +12,7 @@ export const ButtonStyled = styled.button`
 
   cursor: pointer;
   padding: 0px 20px;
+  outline: none;
 
   &::after,
   ::before {
