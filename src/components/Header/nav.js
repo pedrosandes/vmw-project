@@ -9,7 +9,7 @@ const Nav = () => {
     <S.List>
       {Routes.map(({ id, name, path }) => (
         <S.ListItem key={id}>
-          <NavLink exact to={path} activeClassName="selected">
+          <NavLink exact to={path} activeClassName="selected" rel="author">
             {name}
           </NavLink>
         </S.ListItem>
