@@ -12,6 +12,7 @@ const Button = ({ color, children, to = "/" }) => {
       fontColor={color || "#fa4454"}
       borderColor={color || "#fa4454"}
       onClick={handleButtonRoute}
+      rel="author"
     >
       {children}
     </S.ButtonStyled>
