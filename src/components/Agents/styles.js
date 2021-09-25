@@ -8,7 +8,7 @@ export const Container = styled.section`
 `;
 
 export const ContainerAgents = styled.div`
-  margin-top: 20px;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   height: 385px;
@@ -20,10 +20,7 @@ export const ContainerAgents = styled.div`
 `;
 
 export const WrapperButton = styled.div`
-  display: flex;
-  justify-content: center;
   text-align: center;
-  margin-top: 50px;
 `;
 
 /* Skeleton  */
