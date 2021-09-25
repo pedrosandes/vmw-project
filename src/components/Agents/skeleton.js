@@ -18,8 +18,8 @@ const AgentsSkeleton = () => {
           </S.ArrowButton>
         </S.WrapperArrowButton>
         <S.ContainerCarousel>
-          {cardsArr.map((_) => (
-            <S.AgentCard>
+          {cardsArr.map((_, i) => (
+            <S.AgentCard key={i}>
               <S.ShimmerWrapper>
                 <S.Shimmer />
               </S.ShimmerWrapper>

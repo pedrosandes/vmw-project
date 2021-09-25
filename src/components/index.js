@@ -6,6 +6,7 @@ import Button from "./Button";
 import PageError from "./PageError";
 import GameModes from "./GameModes";
 import SectionTitle from "./SectionTitle";
+import Maps from "./Maps";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   PageError,
   GameModes,
   SectionTitle,
+  Maps,
 };
