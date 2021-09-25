@@ -4,6 +4,7 @@ import React from "react";
 import { BigCard } from "../../components";
 import { Agents } from "../../components";
 import { GameModes } from "../../components";
+import { Maps } from "../../components";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <BigCard />
       <Agents />
       <GameModes />
+      <Maps />
     </>
   );
 };

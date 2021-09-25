@@ -4,7 +4,7 @@ const AgentCard = ({ name, image }) => {
   return (
     <S.CardContainer>
       <S.CardName>{name}</S.CardName>
-      <S.CardImage>
+      <S.CardImage title={name}>
         <S.Image src={image} alt={`Imagem do agente`} />
       </S.CardImage>
     </S.CardContainer>

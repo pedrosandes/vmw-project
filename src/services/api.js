@@ -18,3 +18,12 @@ export const getGameModes = async () => {
     console.log(`Error ao fazer a requisição dos modos de jogo: ${error}`);
   }
 };
+
+export const getAllMaps = async () => {
+  try {
+    const response = await axios.get(`${URL_BASE}/maps/`);
+    return response;
+  } catch (error) {
+    console.log(`Error ao fazer a requisição dos mapas: ${error}`);
+  }
+};
