@@ -1,10 +1,15 @@
 import React from "react";
 
 /* Components  */
-import { PageError } from "../../components";
+import { PageError, Footer } from "../../components";
 
 const Mapas = () => {
-  return <PageError />;
+  return (
+    <>
+      <PageError />
+      <Footer />
+    </>
+  );
 };
 
 export default Mapas;

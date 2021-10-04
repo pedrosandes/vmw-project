@@ -9,7 +9,7 @@ export const Container = styled.section`
 
 export const Wrapper = styled.div`
   display: flex;
-  border: 2px solid #fa4454;
+  border: 3px solid #fa4454;
   border-radius: 20px;
   padding: 10px 100px;
 

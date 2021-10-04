@@ -7,6 +7,7 @@ import PageError from "./PageError";
 import GameModes from "./GameModes";
 import SectionTitle from "./SectionTitle";
 import Maps from "./Maps";
+import Footer from "./Footer";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   GameModes,
   SectionTitle,
   Maps,
+  Footer,
 };
