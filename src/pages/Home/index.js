@@ -1,10 +1,7 @@
 import React from "react";
 
 /* Components  */
-import { BigCard } from "../../components";
-import { Agents } from "../../components";
-import { GameModes } from "../../components";
-import { Maps } from "../../components";
+import { BigCard, Agents, GameModes, Maps, Footer } from "../../components";
 
 const Home = () => {
   return (
@@ -13,6 +10,7 @@ const Home = () => {
       <Agents />
       <GameModes />
       <Maps />
+      <Footer />
     </>
   );
 };
