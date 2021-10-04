@@ -1,10 +1,15 @@
 import React from "react";
 
 /* Components  */
-import { PageError } from "../../components";
+import { PageError, Footer } from "../../components";
 
 const Sobre = () => {
-  return <PageError />;
+  return (
+    <>
+      <PageError />
+      <Footer />
+    </>
+  );
 };
 
 export default Sobre;
