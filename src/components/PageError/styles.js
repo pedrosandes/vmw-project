@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   max-width: 1340px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   padding: 0 20px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  border: 2px solid #fa4454;
+  border: 3px solid #fa4454;
   border-radius: 20px;
   padding: 0 100px;
 
