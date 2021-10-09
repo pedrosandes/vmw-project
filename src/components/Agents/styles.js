@@ -24,7 +24,6 @@ export const WrapperButton = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
 `;
 
 /* Skeleton  */
