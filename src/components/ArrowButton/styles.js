@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 481px) {
+    display: none;
+  }
 `;
 
 export const ButtonArrowStyled = styled.button`

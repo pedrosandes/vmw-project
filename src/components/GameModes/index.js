@@ -11,16 +11,25 @@ import { getGameModes } from "../../services/api";
 import GameModeCard from "../GameModeCard";
 import SectionTitle from "../SectionTitle";
 import Button from "../Button";
+import GameModesSkeleton from "./sekeleton";
 
 const GameModes = () => {
   const [gameModes, setGameModes] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
       const { data } = await getGameModes();
       setGameModes(data);
+      setTimeout(() => {
+        setLoading(true);
+      }, 1000);
     })();
   }, []);
+
+  if (!loading) {
+    return <GameModesSkeleton />;
+  }
 
   return (
     <S.Container backgroundImage={TextBackground}>
