@@ -73,6 +73,7 @@ export const ShimmerWrapper = styled.div`
   height: 100%;
   position: relative;
   transform: skewX(-20deg);
+  overflow: hidden;
 `;
 
 export const Shimmer = styled.div`
@@ -98,5 +99,4 @@ export const ArrowButton = styled.div`
   border-radius: 50%;
   background: rgba(250, 68, 84, 0.5);
   margin: 10px;
-  overflow: hidden;
 `;
