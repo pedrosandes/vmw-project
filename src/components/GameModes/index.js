@@ -27,7 +27,7 @@ const GameModes = () => {
     })();
   }, []);
 
-  if (loading) {
+  if (!loading) {
     return <GameModesSkeleton />;
   }
 
