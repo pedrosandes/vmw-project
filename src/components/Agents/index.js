@@ -36,32 +36,31 @@ const Agents = () => {
     { width: 1750, itemsToShow: 6 },
   ];
 
+  if (!loading) {
+    return <AgentsSkeleton />;
+  }
+
   return (
-    <>
-      {loading && (
-        <S.Container>
-          <SectionTitle color="#333">Agentes</SectionTitle>
-          <S.ContainerAgents>
-            <Carousel
-              breakPoints={breakPoint}
-              pagination={false}
-              itemsToScroll={1}
-              itemsToShow={4}
-              renderArrow={ArrowButton}
-              itemPadding={[10]}
-            >
-              {agents.map(({ name, image, id }) => (
-                <AgentCard key={id} name={name} image={image} />
-              ))}
-            </Carousel>
-          </S.ContainerAgents>
-          <S.WrapperButton>
-            <Button to="/agentes">Ver todos os agentes</Button>
-          </S.WrapperButton>
-        </S.Container>
-      )}
-      {!loading && <AgentsSkeleton />}
-    </>
+    <S.Container>
+      <SectionTitle color="#333">Agentes</SectionTitle>
+      <S.ContainerAgents>
+        <Carousel
+          breakPoints={breakPoint}
+          pagination={false}
+          itemsToScroll={1}
+          itemsToShow={4}
+          renderArrow={ArrowButton}
+          itemPadding={[10]}
+        >
+          {agents.map(({ name, image, id }) => (
+            <AgentCard key={id} name={name} image={image} />
+          ))}
+        </Carousel>
+      </S.ContainerAgents>
+      <S.WrapperButton>
+        <Button to="/agentes">Ver todos os agentes</Button>
+      </S.WrapperButton>
+    </S.Container>
   );
 };
 

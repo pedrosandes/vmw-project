@@ -12,6 +12,7 @@ export const ContainerAgents = styled.div`
   display: flex;
   justify-content: center;
   height: 385px;
+  overflow: hidden;
 
   @media screen and (max-width: 481px) {
     height: inherit;
@@ -23,6 +24,7 @@ export const WrapperButton = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 `;
 
 /* Skeleton  */
@@ -84,6 +86,10 @@ export const Shimmer = styled.div`
 export const WrapperArrowButton = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 481px) {
+    display: none;
+  }
 `;
 
 export const ArrowButton = styled.div`
@@ -92,4 +98,5 @@ export const ArrowButton = styled.div`
   border-radius: 50%;
   background: rgba(250, 68, 84, 0.5);
   margin: 10px;
+  overflow: hidden;
 `;
