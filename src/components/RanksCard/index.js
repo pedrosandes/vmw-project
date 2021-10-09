@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import Platina from "../../assets/svg/platina.svg";
 
 const RanksCard = ({ name, image }) => {
   return (
