@@ -25,28 +25,27 @@ const Maps = () => {
     })();
   }, []);
 
+  if (!loading) {
+    return <MapsSkeleton />;
+  }
+
   return (
-    <>
-      {loading && (
-        <S.MapsContainer>
-          <SectionTitle color="#333">Mapas</SectionTitle>
-          <S.MapsList>
-            {maps.slice(0, 6).map(({ id, name, image }) => {
-              return (
-                <S.MapsItem key={id}>
-                  <S.MapImage src={image} title={name} />
-                  <S.MapName>{name}</S.MapName>
-                </S.MapsItem>
-              );
-            })}
-          </S.MapsList>
-          <S.ButtonWrapper>
-            <Button to="/mapas">Ver todos os mapas</Button>
-          </S.ButtonWrapper>
-        </S.MapsContainer>
-      )}
-      {!loading && <MapsSkeleton />}
-    </>
+    <S.MapsContainer>
+      <SectionTitle color="#333">Mapas</SectionTitle>
+      <S.MapsList>
+        {maps.slice(0, 6).map(({ id, name, image }) => {
+          return (
+            <S.MapsItem key={id}>
+              <S.MapImage src={image} title={name} />
+              <S.MapName>{name}</S.MapName>
+            </S.MapsItem>
+          );
+        })}
+      </S.MapsList>
+      <S.ButtonWrapper>
+        <Button to="/mapas">Ver todos os mapas</Button>
+      </S.ButtonWrapper>
+    </S.MapsContainer>
   );
 };
 
