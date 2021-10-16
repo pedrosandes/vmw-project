@@ -8,7 +8,7 @@ import Button from "../Button";
 import MapsSkeleton from "./skeleton";
 
 /* Services  */
-import { getAllMaps } from "../../services/api";
+import { getAllMaps } from "services/api";
 
 const Maps = () => {
   const [maps, setMaps] = useState([]);

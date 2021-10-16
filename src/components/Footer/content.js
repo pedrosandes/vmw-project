@@ -1,6 +1,6 @@
-import Linkedin from "../../assets/svg/linkedin-icon.svg";
-import Github from "../../assets/svg/github-icon.svg";
-import Twitter from "../../assets/svg/twitter-icon.svg";
+import Linkedin from "assets/svg/linkedin-icon.svg";
+import Github from "assets/svg/github-icon.svg";
+import Twitter from "assets/svg/twitter-icon.svg";
 
 export const Icons = [
   {

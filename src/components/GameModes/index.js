@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import * as S from "./styles";
 
 /* Assets  */
-import TextBackground from "../../assets/img/text-background.svg";
+import TextBackground from "assets/img/text-background.svg";
 
 /* Services */
-import { getGameModes } from "../../services/api";
+import { getGameModes } from "services/api";
 
 /* Components  */
 import GameModeCard from "../GameModeCard";
