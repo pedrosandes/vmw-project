@@ -14,7 +14,7 @@ import AgentsSkeleton from "./skeleton";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
@@ -22,7 +22,7 @@ const Agents = () => {
       const { data } = agentsResponse;
       setAgents(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
@@ -36,7 +36,7 @@ const Agents = () => {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <AgentsSkeleton />;
   }
 

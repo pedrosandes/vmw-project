@@ -15,19 +15,19 @@ import GameModesSkeleton from "./sekeleton";
 
 const GameModes = () => {
   const [gameModes, setGameModes] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
       const { data } = await getGameModes();
       setGameModes(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <GameModesSkeleton />;
   }
 

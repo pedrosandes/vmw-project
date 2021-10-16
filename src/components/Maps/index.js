@@ -12,7 +12,7 @@ import { getAllMaps } from "services/api";
 
 const Maps = () => {
   const [maps, setMaps] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
@@ -20,12 +20,12 @@ const Maps = () => {
       const { data } = mapsResponse;
       setMaps(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <MapsSkeleton />;
   }
 
