@@ -1,5 +1,5 @@
 /* Components  */
-import { PageError, Footer } from "../../components";
+import { PageError, Footer } from "components";
 
 const PageNotFound = () => {
   return (

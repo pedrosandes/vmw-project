@@ -3,7 +3,7 @@ import Carousel from "react-elastic-carousel";
 import * as S from "./styles";
 
 /* Services */
-import { getAllAgents } from "../../services/api";
+import { getAllAgents } from "services/api";
 
 /* Components  */
 import AgentCard from "../AgentCard";

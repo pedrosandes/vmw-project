@@ -2,8 +2,8 @@ import { consts } from "react-elastic-carousel";
 import * as S from "./styles";
 
 /* Assets */
-import ArrowLeftImg from "../../assets/svg/arrow-left.svg";
-import ArrowRightImg from "../../assets/svg/arrow-right.svg";
+import ArrowLeftImg from "assets/svg/arrow-left.svg";
+import ArrowRightImg from "assets/svg/arrow-right.svg";
 
 const ArrowLeft = () => {
   return <img src={ArrowLeftImg} alt="Arrow left" />;

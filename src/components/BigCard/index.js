@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { useHistory } from "react-router";
 /* Assets */
-import BigCardImage from "../../assets/img/cardzao-image.png";
+import BigCardImage from "assets/img/cardzao-image.png";
 
 const BigCard = () => {
   const { push } = useHistory();

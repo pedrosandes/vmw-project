@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { useHistory } from "react-router";
 /* Assets */
-import ErrorImage from "../../assets/img/error-image.png";
+import ErrorImage from "assets/img/error-image.png";
 
 const title = "Página em desenvolvimento";
 const text =

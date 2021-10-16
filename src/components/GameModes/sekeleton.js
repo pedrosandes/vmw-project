@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 /* Assets  */
-import TextBackground from "../../assets/img/text-background.svg";
+import TextBackground from "assets/img/text-background.svg";
 
 /* Components  */
 import SectionTitle from "../SectionTitle";
