@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import * as S from "./styles";
 
 /* Components  */
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
-import MapsSkeleton from "./skeleton";
+import SectionTitle from "../SectionTitle/index.jsx";
+import Button from "../Button/index.jsx";
+import MapsSkeleton from "./skeleton.jsx";
 
 /* Services  */
 import { getAllMaps } from "services/api";

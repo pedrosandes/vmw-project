@@ -8,10 +8,10 @@ import TextBackground from "assets/img/text-background.svg";
 import { getGameModes } from "services/api";
 
 /* Components  */
-import GameModeCard from "../GameModeCard";
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
-import GameModesSkeleton from "./sekeleton";
+import GameModeCard from "../GameModeCard/index.jsx";
+import SectionTitle from "../SectionTitle/index.jsx";
+import Button from "../Button/index.jsx";
+import GameModesSkeleton from "./skeleton.jsx";
 
 const GameModes = () => {
   const [gameModes, setGameModes] = useState([]);

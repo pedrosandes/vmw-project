@@ -70,34 +70,6 @@ export const ListItem = styled.li`
   }
 `;
 
-export const ContainerInput = styled.div`
-  width: 27rem;
-  position: relative;
-  @media (max-width: 897px) {
-    display: none;
-  }
-`;
-
-export const InputStyled = styled.input`
-  width: 100%;
-  padding: 12px 0 12px 20px;
-  background-color: transparent;
-  color: ${({ theme }) => theme.colors.white};
-  outline: none;
-  border: 3px solid ${({ theme }) => theme.colors.white};
-  border-radius: 5px;
-
-  &::placeholder {
-    color: ${({ theme }) => theme.colors.white};
-  }
-`;
-
-export const IconSearch = styled.img`
-  position: absolute;
-  top: 12px;
-  right: 30px;
-`;
-
 export const MenuIcon = styled.img`
   display: none;
   cursor: pointer;
