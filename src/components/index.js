@@ -1,14 +1,14 @@
-import Header from "./Header";
-import BigCard from "./BigCard";
-import AgentCard from "./AgentCard";
-import Agents from "./Agents";
-import Button from "./Button";
-import PageError from "./PageError";
-import GameModes from "./GameModes";
-import SectionTitle from "./SectionTitle";
-import Maps from "./Maps";
-import Ranks from "./Ranks";
-import Footer from "./Footer";
+import Header from "./Header/index";
+import BigCard from "./BigCard/index";
+import AgentCard from "./AgentCard/index";
+import Agents from "./Agents/index";
+import Button from "./Button/index";
+import PageError from "./PageError/index";
+import GameModes from "./GameModes/index";
+import SectionTitle from "./SectionTitle/index";
+import Maps from "./Maps/index";
+import Ranks from "./Ranks/index";
+import Footer from "./Footer/index";
 
 export {
   Header,
