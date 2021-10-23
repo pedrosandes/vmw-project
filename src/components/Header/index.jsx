@@ -1,6 +1,7 @@
-import { useState } from "react";
 import * as S from "./styles";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { handleClickScrollTop } from "utils";
 /* Arquivos de rotas */
 import Routes from "./LinkRoutes";
 
@@ -20,6 +21,7 @@ const Header = () => {
   };
 
   function CloseLinkOnClick() {
+    handleClickScrollTop()
     return setIsOpen(false);
   };
 
