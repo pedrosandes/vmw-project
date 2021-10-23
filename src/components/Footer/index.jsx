@@ -1,17 +1,11 @@
-import { NavLink } from "react-router-dom";
 import * as S from "./styles";
+import { NavLink } from "react-router-dom";
+import { handleClickScrollTop } from "utils";
 
 /* Icons  */
 import { Icons, NavLinks } from "./content";
 
 const Footer = () => {
-
-  function handleClickLink() {
-    window.scrollTo({
-      top: 0
-    })
-  }
-
   return (
     <S.Container>
       <S.Wrapper>
@@ -29,7 +23,7 @@ const Footer = () => {
             {NavLinks.map(({ id, name, route }) => {
               return (
                 <li key={id}>
-                  <NavLink onClick={handleClickLink}  exact activeClassName="active"  to={route}>{name}</NavLink>
+                  <NavLink onClick={handleClickScrollTop}  exact activeClassName="active"  to={route}>{name}</NavLink>
                 </li>
               );
             })}

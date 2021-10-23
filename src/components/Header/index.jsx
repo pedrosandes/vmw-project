@@ -15,11 +15,11 @@ import Nav from "./nav.jsx";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const ToggleMenu = () => {
+  function ToggleMenu() {
     return setIsOpen(!isOpen);
   };
 
-  const CloseLinkOnClick = () => {
+  function CloseLinkOnClick() {
     return setIsOpen(false);
   };
 
