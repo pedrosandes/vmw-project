@@ -5,13 +5,12 @@ import { NavLink } from "react-router-dom";
 import Routes from "./LinkRoutes";
 
 /* Assets  */
-import Logo from "../../assets/svg/logo.svg";
-import MenuOpenIcon from "../../assets/svg/menu-open-icon.svg";
-import MenuCloseIcon from "../../assets/svg/menu-close-icon.svg";
+import Logo from "assets/svg/logo.svg";
+import MenuOpenIcon from "assets/svg/menu-open-icon.svg";
+import MenuCloseIcon from "assets/svg/menu-close-icon.svg";
 
 /* Components  */
-import Nav from "./nav";
-import InputSearch from "./inputSearch";
+import Nav from "./nav.jsx";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +43,6 @@ const Header = () => {
           />
           <S.ContainerLeft open={isOpen}>
             <Nav />
-            <InputSearch />
           </S.ContainerLeft>
         </S.ContainerContent>
       </S.ContainerWrapper>

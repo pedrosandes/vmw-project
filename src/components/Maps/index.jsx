@@ -3,16 +3,16 @@ import { useState, useEffect } from "react";
 import * as S from "./styles";
 
 /* Components  */
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
-import MapsSkeleton from "./skeleton";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
+import MapsSkeleton from "./skeleton.jsx";
 
 /* Services  */
-import { getAllMaps } from "../../services/api";
+import { getAllMaps } from "services/api";
 
 const Maps = () => {
   const [maps, setMaps] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
@@ -20,12 +20,12 @@ const Maps = () => {
       const { data } = mapsResponse;
       setMaps(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <MapsSkeleton />;
   }
 

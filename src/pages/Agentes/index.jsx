@@ -1,9 +1,9 @@
 import React from "react";
 
 /* Components  */
-import { PageError, Footer } from "../../components";
+import { PageError, Footer } from "components";
 
-const Mapas = () => {
+const Agentes = () => {
   return (
     <>
       <PageError />
@@ -12,4 +12,4 @@ const Mapas = () => {
   );
 };
 
-export default Mapas;
+export default Agentes;

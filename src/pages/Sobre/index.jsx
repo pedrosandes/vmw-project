@@ -1,9 +1,9 @@
 import React from "react";
 
 /* Components  */
-import { PageError, Footer } from "../../components";
+import { PageError, Footer } from "components";
 
-const Ranques = () => {
+const Sobre = () => {
   return (
     <>
       <PageError />
@@ -12,4 +12,4 @@ const Ranques = () => {
   );
 };
 
-export default Ranques;
+export default Sobre;

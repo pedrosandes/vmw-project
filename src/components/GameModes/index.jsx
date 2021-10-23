@@ -2,32 +2,32 @@ import { useEffect, useState } from "react";
 import * as S from "./styles";
 
 /* Assets  */
-import TextBackground from "../../assets/img/text-background.svg";
+import TextBackground from "assets/img/text-background.svg";
 
 /* Services */
-import { getGameModes } from "../../services/api";
+import { getGameModes } from "services/api";
 
 /* Components  */
-import GameModeCard from "../GameModeCard";
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
-import GameModesSkeleton from "./sekeleton";
+import GameModeCard from "../GameModeCard/index";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
+import GameModesSkeleton from "./skeleton.jsx";
 
 const GameModes = () => {
   const [gameModes, setGameModes] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
       const { data } = await getGameModes();
       setGameModes(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <GameModesSkeleton />;
   }
 

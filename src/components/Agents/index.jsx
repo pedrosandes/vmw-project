@@ -3,18 +3,18 @@ import Carousel from "react-elastic-carousel";
 import * as S from "./styles";
 
 /* Services */
-import { getAllAgents } from "../../services/api";
+import { getAllAgents } from "services/api";
 
 /* Components  */
-import AgentCard from "../AgentCard";
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
-import ArrowButton from "../ArrowButton";
+import AgentCard from "../AgentCard/index";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
+import ArrowButton from "../ArrowButton/index";
 import AgentsSkeleton from "./skeleton";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState("loading");
 
   useEffect(() => {
     (async () => {
@@ -22,7 +22,7 @@ const Agents = () => {
       const { data } = agentsResponse;
       setAgents(data);
       setTimeout(() => {
-        setLoading(true);
+        setLoadingStatus("success");
       }, 1000);
     })();
   }, []);
@@ -36,7 +36,7 @@ const Agents = () => {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  if (!loading) {
+  if (loadingStatus === "loading") {
     return <AgentsSkeleton />;
   }
 

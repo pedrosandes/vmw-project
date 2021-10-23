@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 /* Components */
-import { SectionTitle } from "../";
+import { SectionTitle }  from "../";
 
 const AgentsSkeleton = () => {
   const cardsArr = new Array(4).fill(null);

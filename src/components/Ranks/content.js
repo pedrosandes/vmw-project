@@ -1,8 +1,8 @@
 /* Assets  */
-import Platina from "../../assets/svg/platina.svg";
-import Diamante from "../../assets/svg/diamante.svg";
-import Imortal from "../../assets/svg/imortal.svg";
-import Radiante from "../../assets/svg/radiante.svg";
+import Platina from "assets/svg/platina.svg";
+import Diamante from "assets/svg/diamante.svg";
+import Imortal from "assets/svg/imortal.svg";
+import Radiante from "assets/svg/radiante.svg";
 
 const Ranks = [
   { id: 1, name: "Platina", image: Platina },

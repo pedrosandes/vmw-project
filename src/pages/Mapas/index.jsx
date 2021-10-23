@@ -1,9 +1,9 @@
 import React from "react";
 
 /* Components  */
-import { PageError, Footer } from "../../components";
+import { PageError, Footer } from "components";
 
-const Modos = () => {
+const Mapas = () => {
   return (
     <>
       <PageError />
@@ -12,4 +12,4 @@ const Modos = () => {
   );
 };
 
-export default Modos;
+export default Mapas;
