@@ -4,14 +4,17 @@ import { useHistory } from "react-router";
 const Button = ({ color, children, to = "/" }) => {
   const history = useHistory();
 
-  function handleButtonRoute() {
-    history.push(to);
+  function handleButtonRoute(path) {
+    history.push(path);
+    window.scrollTo({
+      top: 0,
+    })
   }
   return (
     <S.ButtonStyled
       fontColor={color || "#fa4454"}
       borderColor={color || "#fa4454"}
-      onClick={handleButtonRoute}
+      onClick={() => handleButtonRoute(to)}
       rel="author"
     >
       {children}
