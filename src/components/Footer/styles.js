@@ -41,7 +41,11 @@ export const FooterNav = styled.nav`
   padding-left: 30px;
 `;
 
-export const ListNav = styled.ul``;
+export const ListNav = styled.ul`
+  .active {
+    color: ${({theme}) => theme.colors.redPrimary};
+  }
+`;
 
 export const CreatedBy = styled.section`
   flex: 1.2;

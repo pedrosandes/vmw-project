@@ -5,6 +5,13 @@ import * as S from "./styles";
 import { Icons, NavLinks } from "./content";
 
 const Footer = () => {
+
+  function handleClickLink() {
+    window.scrollTo({
+      top: 0
+    })
+  }
+
   return (
     <S.Container>
       <S.Wrapper>
@@ -22,7 +29,7 @@ const Footer = () => {
             {NavLinks.map(({ id, name, route }) => {
               return (
                 <li key={id}>
-                  <NavLink to={route}>{name}</NavLink>
+                  <NavLink onClick={handleClickLink}  exact activeClassName="active"  to={route}>{name}</NavLink>
                 </li>
               );
             })}
