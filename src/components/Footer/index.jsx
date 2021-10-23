@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import { NavLink } from "react-router-dom";
-import { handleClickLink } from "utils";
+import { handleClickScrollTop } from "utils";
 
 /* Icons  */
 import { Icons, NavLinks } from "./content";
@@ -23,7 +23,7 @@ const Footer = () => {
             {NavLinks.map(({ id, name, route }) => {
               return (
                 <li key={id}>
-                  <NavLink onClick={handleClickLink}  exact activeClassName="active"  to={route}>{name}</NavLink>
+                  <NavLink onClick={handleClickScrollTop}  exact activeClassName="active"  to={route}>{name}</NavLink>
                 </li>
               );
             })}
