@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 /* Components */
-import SectionTitle from "../SectionTitle/index.jsx";
+import { SectionTitle } from "../";
 
 const MapsSkeleton = () => {
   const maps = new Array(6).fill(null);

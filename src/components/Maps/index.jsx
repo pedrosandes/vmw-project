@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import * as S from "./styles";
 
 /* Components  */
-import SectionTitle from "../SectionTitle/index.jsx";
-import Button from "../Button/index.jsx";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
 import MapsSkeleton from "./skeleton.jsx";
 
 /* Services  */

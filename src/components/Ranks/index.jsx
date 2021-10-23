@@ -4,9 +4,9 @@ import * as S from "./styles";
 import RanksContent from "./content";
 
 /* Components */
-import RanksCard from "../RanksCard/index.jsx";
-import SectionTitle from "../SectionTitle/index.jsx";
-import Button from "../Button/index.jsx";
+import RanksCard from "../RanksCard/index";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
 
 const Ranks = () => {
   return (

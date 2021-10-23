@@ -8,9 +8,9 @@ import TextBackground from "assets/img/text-background.svg";
 import { getGameModes } from "services/api";
 
 /* Components  */
-import GameModeCard from "../GameModeCard/index.jsx";
-import SectionTitle from "../SectionTitle/index.jsx";
-import Button from "../Button/index.jsx";
+import GameModeCard from "../GameModeCard/index";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
 import GameModesSkeleton from "./skeleton.jsx";
 
 const GameModes = () => {

@@ -6,11 +6,11 @@ import * as S from "./styles";
 import { getAllAgents } from "services/api";
 
 /* Components  */
-import AgentCard from "../AgentCard/index.jsx";
-import SectionTitle from "../SectionTitle/index.jsx";
-import Button from "../Button/index.jsx";
-import ArrowButton from "../ArrowButton/index.jsx";
-import AgentsSkeleton from "./skeleton.jsx";
+import AgentCard from "../AgentCard/index";
+import SectionTitle from "../SectionTitle/index";
+import Button from "../Button/index";
+import ArrowButton from "../ArrowButton/index";
+import AgentsSkeleton from "./skeleton";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
