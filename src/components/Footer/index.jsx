@@ -1,17 +1,11 @@
-import { NavLink } from "react-router-dom";
 import * as S from "./styles";
+import { NavLink } from "react-router-dom";
+import { handleClickLink } from "utils";
 
 /* Icons  */
 import { Icons, NavLinks } from "./content";
 
 const Footer = () => {
-
-  function handleClickLink() {
-    window.scrollTo({
-      top: 0
-    })
-  }
-
   return (
     <S.Container>
       <S.Wrapper>
