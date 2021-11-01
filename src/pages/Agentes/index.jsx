@@ -1,12 +1,12 @@
 import React from "react";
 
 /* Components  */
-import { PageError, Footer } from "components";
+import { AllAgents ,Footer } from "components";
 
 const Agentes = () => {
   return (
     <>
-      <PageError />
+      <AllAgents />
       <Footer />
     </>
   );
