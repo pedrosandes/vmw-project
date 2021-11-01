@@ -8,7 +8,7 @@ export const CardContainer = styled.section`
   height: 365px;
   background-color: ${({ theme }) => theme.colors.redSecundary};
   border-radius: 2rem;
-  padding: 20px 0 60px 0;
+  padding: 20px 0 50px 0;
   cursor: pointer;
   position: relative;
 
@@ -35,10 +35,6 @@ export const CardName = styled.span`
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
   font-size: ${({ theme }) => theme.fontSize.fs20};
-
-  @media (max-width: 480px) {
-    font-size: ${({ theme }) => theme.fontSize.fs12};
-  }
 `;
 
 export const CardImage = styled.div`
