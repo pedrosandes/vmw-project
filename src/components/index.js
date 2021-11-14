@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import InputSearch from "./InputSearch";
 import AllAgents from "./AllAgents";
 import AgentNotFound from "./AgentNotFound";
+import SobreContent from "./SobreContent";
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   InputSearch,
   AllAgents,
   AgentNotFound,
+  SobreContent,
 };
