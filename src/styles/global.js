@@ -97,6 +97,7 @@ button {
     min-height: 100vh;
     width: 100%;
     background-color: ${({ theme }) => theme.background};
+    scroll-behavior: smooth;
   }
 
 `;
